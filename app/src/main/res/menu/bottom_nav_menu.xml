@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_store" android:title="@string/nav_store" android:icon="@drawable/ic_nav_store" />
+    <item android:id="@+id/nav_cart" android:title="@string/nav_cart" android:icon="@drawable/ic_nav_cart" />
+    <item android:id="@+id/nav_orders" android:title="@string/nav_orders" android:icon="@drawable/ic_nav_orders" />
+    <item android:id="@+id/nav_assistant" android:title="@string/nav_assistant" android:icon="@drawable/ic_nav_assistant" />
+    <item android:id="@+id/nav_profile" android:title="@string/nav_profile" android:icon="@drawable/ic_nav_profile" />
+</menu>

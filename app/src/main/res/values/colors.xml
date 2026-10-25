@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- HarvestHub brand palette, ported from the Flutter app (lib/main.dart). -->
+    <color name="brand_green">#145943</color>
+    <color name="brand_green_dark">#083F2C</color>
+    <color name="brand_amber">#F6C53D</color>
+    <color name="brand_orange">#F39A1F</color>
+    <color name="brand_cream">#F7F5EC</color>
+
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#1A1A1A</color>
+    <color name="muted">#6B6B6B</color>
+    <color name="error">#C62828</color>
+
+    <color name="card_border">#1A145943</color>
+    <color name="nav_indicator">#DCEBDF</color>
+    <color name="logo_bg">#E3E4DE</color>
+
+    <!-- Approximate Material3 role mapping so the stock M3 purple baseline
+         never shows through on roles this app doesn't explicitly style. -->
+    <color name="primary_container">#D9ECE1</color>
+    <color name="on_primary_container">#083F2C</color>
+    <color name="secondary_container">#FBE6C8</color>
+    <color name="on_secondary_container">#083F2C</color>
+    <color name="surface_variant">#EFEDE4</color>
+    <color name="outline">#CBD3CD</color>
+</resources>

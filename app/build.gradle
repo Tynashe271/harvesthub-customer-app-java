@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'zw.co.harvesthub.customer_app.java'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "zw.co.harvesthub.customer_app.java"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        def apiUrl = project.findProperty('harvesthubApiUrl') ?: "https://maphric-express-api.onrender.com/api/v1"
+        def goApiUrl = project.findProperty('harvesthubGoApiUrl') ?: "http://10.0.2.2:8081/api/go/v1"
+        buildConfigField "String", "HARVESTHUB_API_URL", "\"${apiUrl}\""
+        buildConfigField "String", "HARVESTHUB_GO_API_URL", "\"${goApiUrl}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.drawerlayout:drawerlayout:1.2.0'
+    implementation 'androidx.fragment:fragment:1.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+}

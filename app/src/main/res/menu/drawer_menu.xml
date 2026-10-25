@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_favorites" android:title="@string/nav_favorites" android:icon="@drawable/ic_favorite_border" />
+    <item android:id="@+id/nav_shopping_list" android:title="@string/nav_shopping_list" android:icon="@drawable/ic_nav_list" />
+    <item android:id="@+id/nav_location" android:title="@string/nav_location" android:icon="@drawable/ic_nav_location" />
+    <item android:id="@+id/nav_notifications" android:title="@string/nav_notifications" android:icon="@drawable/ic_nav_notifications" />
+    <item android:id="@+id/nav_support" android:title="@string/nav_support" android:icon="@drawable/ic_nav_support" />
+</menu>

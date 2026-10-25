@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.HarvestHub" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_green</item>
+        <item name="colorOnPrimary">@color/surface</item>
+        <item name="colorPrimaryDark">@color/brand_green_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+
+        <item name="colorSecondary">@color/brand_orange</item>
+        <item name="colorOnSecondary">@color/surface</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/muted</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorError">@color/error</item>
+
+        <item name="android:windowBackground">@color/brand_cream</item>
+        <item name="android:statusBarColor">@color/brand_green_dark</item>
+
+        <item name="materialButtonStyle">@style/Widget.HarvestHub.Button</item>
+        <item name="textInputStyle">@style/Widget.HarvestHub.TextInputLayout</item>
+        <item name="materialCardViewStyle">@style/Widget.HarvestHub.Card</item>
+        <item name="bottomNavigationStyle">@style/Widget.HarvestHub.BottomNav</item>
+    </style>
+
+    <style name="Widget.HarvestHub.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/brand_green</item>
+        <item name="android:textColor">@color/surface</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="Widget.HarvestHub.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="hintTextColor">@color/muted</item>
+        <item name="android:textColorHint">@color/muted</item>
+    </style>
+
+    <style name="Widget.HarvestHub.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardCornerRadius">18dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/card_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.HarvestHub.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.HarvestHub.BottomNav.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.HarvestHub.BottomNav.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/nav_indicator</item>
+    </style>
+</resources>
